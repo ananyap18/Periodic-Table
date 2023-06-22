@@ -1,0 +1,220 @@
+:root {
+    --bg-primary: linear-gradient(to bottom, #180548, #df82f6);
+ }
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ p.headings {
+    font-size: 45px;
+    font-weight:bolder;
+ }
+
+ p.footer {
+   font-size: 20px;
+   font-weight:normal;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 50px;
+ }
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    color: #fff;
+    background-image: var(--bg-primary);
+ }
+ 
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ 
+ .head {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 0;
+ }
+ 
+ .head a {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: #fbfaf7;
+ }
+ 
+ h1 {font-weight: 600;}
+
+ .number {
+    font-size: 0.7rem;
+    font-weight: 100;
+ }
+ 
+ .symbol {
+    font-size: 1.1rem;
+    font-weight: 600;
+ }
+ 
+ .element {
+    font-size: 0.56rem;
+    font-weight: 900;
+ }
+ 
+ .group {
+    font-size: 0.6rem;
+    font-weight: 600;
+ }
+ 
+ .container {
+    display: grid;
+    grid-template-columns: repeat(18, 70px);
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 0.2rem;
+    padding: 1rem 0;
+ }
+ 
+ .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.65rem;
+ }
+ 
+ .box:first-child {
+    grid-column: 1;
+ }
+ 
+ .box:nth-child(2) {
+    grid-column: 18;
+ }
+ 
+ .box:nth-child(5) {
+    grid-column: 13;
+ }
+ 
+ .box:nth-child(12) {
+    grid-column: 2;
+ }
+ 
+ .box:nth-child(13) {
+    grid-column: 13;
+ }
+ 
+ @media(max-width: 1350px) {
+    .container {
+       grid-template-columns: repeat(18, 60px);
+    }
+ 
+    .box {
+       overflow-x: hidden;
+    }
+ }
+ 
+ @media(max-width: 1230px) {
+    .box:nth-child(2) {
+       grid-column: 2;
+    }
+ }
+ 
+ @media(max-width: 1150px) {
+    .container {
+       grid-template-columns: repeat(10, 70px);
+    }
+ 
+    .box:nth-child(5) {
+       grid-column: 5;
+    }
+ 
+    .box:nth-child(10) {
+       grid-column: 10;
+    }
+ 
+    .box:nth-child(11) {
+       grid-row: 2;
+       grid-column: 1;
+    }
+ 
+    .box:nth-child(13) {
+       grid-row: 2;
+       grid-column: 3;
+    }
+ }
+ 
+ @media(max-width: 800px) {
+    .container {
+       grid-template-columns: repeat(5, 70px);
+    }
+ 
+    .box:nth-child(5) {
+       grid-row: 1;
+    }
+ 
+    .box:nth-child(10) {
+       grid-column: 5;
+       grid-row: 2;
+    }
+ 
+    .box:nth-child(11) {
+       grid-row: 3;
+       grid-column: 1;
+    }
+ 
+    .box:nth-child(13) {
+       grid-row: 3;
+       grid-column: 3;
+    }
+ }
+
+ .box {
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(20.0px);
+   -webkit-backdrop-filter: blur(3.0px);
+   border: 1px solid rgba(255, 255, 255, 0.10);
+   border-radius: 3px; 
+}
+
+.box:hover {
+   background:rgba(255, 255, 255, 0.50);
+   border: 1px solid rgba(255, 255, 255, 0.80);
+}
+
+.alkali-metal {
+   background: #e6a2f1;
+}
+.metalloid {
+   background: #9407a9;
+}
+
+.alkaline-earth {
+   background: #eb8bfa;
+}
+.non-metals {
+   background: #760587;
+}
+.actinides  {
+   background: #672867;
+}
+
+.transition-metals {
+   background: #da62ed;
+}
+
+.post-transition-metals {
+   background: #c60ae2;
+}
+
+.halogen {
+   background: #5a0367;
+}
+
+.noble-gas {
+   background: #490254;
+}
+.lanthanides {
+   background: #7c057e;
+}
